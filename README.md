@@ -1,4 +1,2 @@
-# Prueba
-Modificando prueba
-modificando desde visual
-aprendiendo a usar github
+# Actividades
+Aqui se alojan las actividades relacionadas al curso de Frontend.
