@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h2>Ingrese sus datos</h2>
+    <form action="" method="post">
+        <!--Nombre-->
+        <label for="name">Nombre Completo:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <!--Genero-->
+        <label for="genero">Género:</label>
+        <label><input type="radio" name="genero" value="hombre" required> Mujer</label>
+        <label><input type="radio" name="genero" value="mujer"> Hombre</label><br>
+        <label><input type="radio" name="genero" value="ninguno"> Prefiero no decirlo</label><br>
+        <br>
+        <!--Fecha de nacimiento-->
+        <fieldset>
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <br>
+
+            <label for="dia">Dia</label>
+            <select id="dia" name="dia" required>
+                <option value="dia"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select><br>
+
+            <label for="mes">Mes</label>
+            <select id="mes" name="mes" required>
+                <option value="mes"></option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select><br>
+
+            <label for="año">Año</label>
+            <select id="año" name="año" required>
+                <option value="año"></option>
+                <option value="1">1995</option>
+                <option value="2">1996</option>
+                <option value="3">1997</option>
+                <option value="4">1998</option>
+                <option value="5">1999</option>
+                <option value="6">2000</option>
+                <option value="7">2001</option>
+                <option value="8">2002</option>
+                <option value="9">2003</option>
+                <option value="10">2004</option>
+            </select><br>
+        </fieldset>
+        <!--Pais de residencia-->
+        <label for="country">Pais de residencia:</label>
+        <select id="country" name="country" required>
+            <option value="">Seleccione una opción</option>
+            <option value="Chile">Chile</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Canada">Canada</option>
+        </select><br>
+        
+        <!--Correo-->
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required><br>
+        <!--Contraseña-->
+        <label for="password">Ingrese su contraseña:</label>
+        <input type="password" id="password" name="password" minlength="8" required></input><br>
+        <!--Confirmacion de contraseña-->
+        <label for="password">Confirme su contraseña:</label>
+        <input type="password" id="password" name="password" minlength="8" required></input><br>
+        <!--terminos y condiciones-->
+        <label for="terminos">Acepto terminos y condiciones</label>
+        <input type="checkbox" id="terminos" name="terminos" value="terminos" required>
+        <br>
+        <!--enviar-->
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
